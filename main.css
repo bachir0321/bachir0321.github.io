@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+header {
+  font-family: arial;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(102,51,0);
+  width: 100%;
+  position: auto;
+  z-index: 10;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0px 15px 15px;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline;
+  text-align: center;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0;
+}
+
+li a:hover {
+  background-color: black;
+}
+
+header p {
+  margin: 0;
+  padding: 15px;
+  float: left;
+}
+
+.jumbotron {
+  color: white;
+  text-align: center;
+  display: flex;
+  background-image: url("skyline.jpg");
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.jumbotron h1 {
+  font-family: arial;
+  position: relative;
+  top: 75px;
+  width: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#bars {
+  text-align: center;
+}
+
+h2 {
+  font-family: arial;
+  margin: 0px auto 0px auto;
+  padding: 40px 0px 20px 0px;
+}
+
+#breweries {
+  text-align: center;
+  background-color: rgb(222,222,222);
+}
+
+#distilleries {
+  text-align: center;
+}
+
+.pictures {
+  display: inline-block;
+  margin: 20px;
+  border: 3px solid black;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.pictures:hover .overlay {
+  opacity: 0.70;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+img{
+  vertical-align: top;
+}
