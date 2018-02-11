@@ -122,6 +122,11 @@ h3 {
   vertical-align: top;
 }
 
+.pictures img {
+  max-width: 100%;
+  height: auto;
+}
+
 .overlay {
   position: absolute;
   top: 0;
