@@ -5,14 +5,11 @@ body {
 
 header {
   font-family: courier new;
-  /* font-weight: bold; */
   color: white;
   background-color: rgb(102,51,0);
   width: 100%;
   position: auto;
   z-index: 10;
-  margin: 0px;
-  padding: 0px;
 }
 
 nav {
@@ -29,32 +26,22 @@ li {
   float: right;
 }
 
+#aa {
+  float: left;
+}
+
 li a {
-  display: inline;
-  text-align: center;
   color: white;
-  padding: 14px 16px;
   text-decoration: none;
-  margin: 0;
+  padding: 15px;
+  float: left;
 }
 
 li a:hover {
   background-color: black;
 }
 
-header a {
-  margin: 0;
-  padding: 15px;
-  float: left;
-}
-
-#aa {
-  float: left;
-  margin: 0;
-}
-
 .jumbotron {
-  color: white;
   text-align: center;
   background-image: url("skyline.jpg");
   background-size: cover;
@@ -75,12 +62,10 @@ header a {
   font-family: arial;
   position: relative;
   top: 40px;
-  /* left: 1%; */
-  /* width: 500px; */
   margin: 0 auto;
-  /* border: 3px solid red; */
-  /* padding: 0; */
-  /* text-transform: uppercase; */
+  max-width: 95%;
+  height: auto;
+  margin: 0px 2.5%;
 }
 
 h2 {
