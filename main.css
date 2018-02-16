@@ -172,3 +172,16 @@ body {
   padding: 0px;
   text-align: center;
 }
+
+@media screen and (min-width: 900px) and (max-width: 1800px) {
+  #bars, #breweries, #distilleries {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #cc, #dd, #ee {
+    display: none;
+  }
+}
