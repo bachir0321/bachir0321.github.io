@@ -81,19 +81,19 @@ h3 {
   font-size: 32px;
 }
 
-#bars {
+#bars,#breweries,#distilleries{
   text-align: center;
+}
+
+.barbody {
   background-image: url("paper.png");
 }
 
-#breweries {
-  text-align: center;
+.breweriesbody {
   background-image: url("husk.png");
-  /* background-color: rgb(230, 220, 220); */
 }
 
-#distilleries {
-  text-align: center;
+.distilleriesbody {
   background-image: url("paper.png");
 }
 
@@ -150,7 +150,7 @@ img {
 
 /* ABOUT CSS */
 
-body {
+#aboutbackground {
   background-image: url("paper.png");
 }
 
