@@ -43,7 +43,7 @@ li a:hover {
 
 .jumbotron {
   text-align: center;
-  background-image: url("skyline.jpg");
+  background-image: url("../images/skyline.jpg");
   background-size: cover;
   height: 700px;
 }
@@ -86,15 +86,15 @@ h3 {
 }
 
 .barbody {
-  background-image: url("paper.png");
+  background-image: url("../images/paper.png");
 }
 
 .breweriesbody {
-  background-image: url("husk.png");
+  background-image: url("../images/husk.png");
 }
 
 .distilleriesbody {
-  background-image: url("paper.png");
+  background-image: url("../images/paper.png");
 }
 
 .pictures {
@@ -151,7 +151,7 @@ img {
 /* ABOUT CSS */
 
 #aboutbackground {
-  background-image: url("paper.png");
+  background-image: url("../images/paper.png");
 }
 
 .aboutheader {
@@ -173,6 +173,7 @@ img {
   text-align: center;
 }
 
+/* Medium size computers */
 @media screen and (min-width: 900px) and (max-width: 1800px) {
   #bars, #breweries, #distilleries {
     max-width: 900px;
@@ -180,8 +181,41 @@ img {
   }
 }
 
+/* Mobile */
 @media screen and (max-width: 650px) {
-  #cc, #dd, #ee {
-    display: none;
+
+  .burger-nav {
+    display: block;
+    height: 40px;
+    width: 100%;
+    background: url("../images/burger.svg") no-repeat 98% center;
+    cursor: pointer;
   }
+
+  header nav ul {
+    overflow: hidden;
+    background: #505050;
+    height: 0;
+  }
+
+  header nav ul.open {
+    height: auto;
+  }
+
+  header nav ul li {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+
+  header nav ul li a {
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #404040;
+    display: block;
+    margin: 0;
+    float: none;
+  }
+
 }
