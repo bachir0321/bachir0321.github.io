@@ -173,6 +173,10 @@ img {
   text-align: center;
 }
 
+.burger-nav {
+  display: none;
+}
+
 /* Medium size computers */
 @media screen and (min-width: 900px) and (max-width: 1800px) {
   #bars, #breweries, #distilleries {
@@ -188,7 +192,12 @@ img {
     display: block;
     height: 40px;
     width: 100%;
-    background: url("../images/burger.svg") no-repeat 98% center;
+    /* cursor: pointer; */
+  }
+
+  .burger-nav img {
+    padding: 8px 8px;
+    float: right;
     cursor: pointer;
   }
 
