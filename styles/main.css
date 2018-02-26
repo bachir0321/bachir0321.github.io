@@ -5,7 +5,6 @@ body {
 
 header {
   font-family: courier new;
-  color: white;
   background-color: rgb(102,51,0);
   width: 100%;
   position: auto;
@@ -15,30 +14,34 @@ header {
 nav {
 }
 
-ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-li {
-  float: right;
+nav ul li {
+  display: inline;
 }
 
-#aa {
-  float: left;
-}
-
-li a {
+nav ul li a {
   color: white;
   text-decoration: none;
   padding: 15px;
   float: left;
 }
 
-li a:hover {
+nav ul li a:hover {
   background-color: black;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
 }
 
 .jumbotron {
@@ -183,6 +186,11 @@ img {
     max-width: 900px;
     margin: auto;
   }
+
+  nav ul li {
+    display: inline;
+  }
+
 }
 
 /* Mobile */
@@ -190,9 +198,8 @@ img {
 
   .burger-nav {
     display: block;
-    height: 40px;
+    height: 52px;
     width: 100%;
-    /* cursor: pointer; */
   }
 
   .burger-nav img {
@@ -216,6 +223,7 @@ img {
     text-align: left;
     width: 100%;
     margin: 0;
+    display: block;
   }
 
   header nav ul li a {
@@ -227,6 +235,8 @@ img {
     float: none;
   }
 
-}
+  .header-right, .header-left {
+    float: none;
+  }
 
-/* bug */
+}
