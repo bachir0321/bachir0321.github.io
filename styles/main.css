@@ -14,6 +14,10 @@ header {
 nav {
 }
 
+.burger-nav {
+  display: none;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -176,10 +180,6 @@ img {
   text-align: center;
 }
 
-.burger-nav {
-  display: none;
-}
-
 /* Medium size computers */
 @media screen and (min-width: 900px) and (max-width: 1800px) {
   #bars, #breweries, #distilleries {
@@ -198,7 +198,7 @@ img {
 
   .burger-nav {
     display: block;
-    height: 52px;
+    height: 48px;
     width: 100%;
   }
 
@@ -206,6 +206,17 @@ img {
     padding: 8px 8px;
     float: right;
     cursor: pointer;
+  }
+
+  .burger-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    float: left;
+  }
+
+  .burger-nav a:hover {
+    background-color: black;
   }
 
   header nav ul {
@@ -237,6 +248,14 @@ img {
 
   .header-right, .header-left {
     float: none;
+  }
+
+  .header-left {
+    display: none;
+  }
+
+  .jumbotron {
+    height: 600px;
   }
 
 }
