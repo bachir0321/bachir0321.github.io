@@ -10,13 +10,20 @@
 
 <header>
   <nav>
-    <a class="burger-nav"></a>
+    <div class="burger-nav">
+      <img src="images/burger.svg" alt="Menu" width-"32" height="32">
+      <a href="index.html">Cincy's Finest</a>
+    </div>
     <ul>
-      <li><a href="./about.html">About</a></li>
-      <li><a href="./index.html#distilleries">Distilleries</a></li>
-      <li><a href="./index.html#breweries">Breweries</a></li>
-      <li><a href="./index.html#bars">Bars</a></li>
-      <li id="aa"><a href="./index.html">Cincy's Finest</a></li>
+      <div class="header-left">
+        <li><a href="index.html">Cincy's Finest</a></li>
+      </div>
+      <div class="header-right">
+        <li><a href="./index.html#bars">Bars</a></li>
+        <li><a href="./index.html#breweries">Breweries</a></li>
+        <li><a href="./index.html#distilleries">Distilleries</a></li>
+        <li><a href="about.html">About</a></li>
+      </div>
     </ul>
   </nav>
 </header>
@@ -33,7 +40,7 @@
   <p>Cincy's Finest is the first culmination of my subpar web design skills. It's an always evolving project where I test out new HTML & CSS techniques through sharing my favorite bars, breweries, and distilleries with Cincinnatians and visitors alike. Any advice on the website's aesthetic, layout, content, or anything else would be much appreciated. But go easy on me!</p>
 </div>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scripts/menu.js"></script>
 
 </body>
